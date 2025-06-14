@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: mestir-juja-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    pythonVersion: 3.11.9
+    envVars:
+      - key: BOT_TOKEN
+        value: YOUR_BOT_TOKEN
+      - key: ADMIN_ID
+        value: YOUR_ADMIN_ID
